@@ -14,7 +14,7 @@ export const handler: Handlers<Video[] | number, ApiUser> = {
         console.log("error inesperado");
       }
       if (res.status === 404) {
-        console.log("usuario con userid no econtrado");
+        console.log("Usuario con userid no econtrado");
       }
       return ctx.render(res.status);
     }
